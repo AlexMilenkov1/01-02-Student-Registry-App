@@ -12,14 +12,14 @@ jobs:
     
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js 18.x
+    - name: Use Node.js 20
       uses: actions/setup-node@v4
       with:
         node-version: 20
         cache: 'npm' 
 
     - name: Install dependencies
-      run: npm run install
+      run: npm install
 
     - name: Run the app
       run: npm run start
